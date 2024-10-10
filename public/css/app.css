@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#slider {
+    position: relative;
+    width: 960px; /* Ancho del slider, igual al ancho de las imágenes */
+    height: 550px; /* Alto del slider, igual al alto de las imágenes */
+    margin: 20px auto; /* Centrado horizontal y margen superior */
+    overflow: hidden;
+}
+
+#slider img {
+    border-radius: 15px;
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/* Estilo para el h1 de bienvenida */
+h1 {
+    text-align: center; /* Centrar el texto */
+    font-size: 3rem; /* Tamaño grande */
+    color: white; /* Color blanco */
+    font-family: "Audiowide", sans-serif; /* O usa 'Audiowide', sans-serif para un estilo más moderno */
+}
+
+/* Menú de navegación */
+/* Barra de navegación */
+nav {
+    display: flex;
+    justify-content: center; /* Centrar los botones */
+    gap: 15px; /* Espacio entre los botones */
+    background-color: #264653; /* Color de fondo de la barra */
+    padding: 10px; /* Espacio interno en la barra */
+    margin: 0 10px; /* Margen de 10px a los lados del navegador */
+    border-radius: 15px; /* Bordes redondeados para toda la barra */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto 3D */
+}
+
+/* Estilo de los enlaces dentro de la barra */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #264653; /* Mismo color que la barra */
+    border-radius: 10px; /* Bordes redondeados de los botones */
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para los botones */
+nav a:hover {
+    background-color: #000000; /* Cambia el color al pasar el mouse */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Estilos para los sectores */
+.sector {
+    height: 100vh;
+    padding: 20px;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los cuadros simétricos */
+.cuadros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.cuadro {
+    background-color: #ffffff;
+    width: 30%;
+    height: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cuadro .imagen-container {
+    width: 100%;
+    height: 75%; /* Ajustado para dejar más espacio al temporizador */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15px; /* Espacio entre la imagen y el temporizador */
+}
+
+.cuadro img {
+    max-width: 90%; /* Reducido para mantener un margen dentro del contenedor */
+    max-height: 90%; /* Reducido para mantener un margen dentro del contenedor */
+    object-fit: contain;
+}
+
+.cuadro .temporizador {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: auto; /* Empuja el temporizador hacia abajo */
+}
+
+/*sectores*/
+
+#Bienvenida {
+    background: linear-gradient(to bottom, #000000, #0052cc);
+}
+
+#Consolas {
+    background: linear-gradient(to bottom, #0052cc, #107c10);
+}
+
+#sector3 {
+    background: linear-gradient(to bottom, #107c10, #000000);
+}
