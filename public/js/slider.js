@@ -1,6 +1,7 @@
 window.addEventListener('load', iniciar, false);
 
 /* Contador inicializado en cero */
+//comentario de prueba 
 var contador = 0;
 
 function iniciar() {
